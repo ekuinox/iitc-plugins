@@ -5,7 +5,7 @@
 // @category       COMM
 // @version        0.1.2.20170305.185000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
-// @source         https://github.com/udnp/iitc-plugins
+// @source         https://github.com/lm9/iitc-plugins
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js
 // @description    [lm9-2017-03-05-185000] Spam Blocker
