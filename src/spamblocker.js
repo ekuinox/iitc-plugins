@@ -1,14 +1,14 @@
 // ==UserScript==
-// @id             iitc-plugin-spam-blocker
+// @id             iitc-plugin-spam-blocker@lm9
 // @name           IITC plugin: Spam Blocker
 // @author         lm9
 // @category       COMM
-// @version        0.1.1.20170304.225100
+// @version        0.1.2.20170305.185000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @source         https://github.com/udnp/iitc-plugins
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js
-// @description    Spam Blocker
+// @description    [lm9-2017-03-05-185000] Spam Blocker
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
 // @match          https://www.ingress.com/intel*
@@ -61,6 +61,7 @@ function wrapper(plugin_info) {
 
     var setup = function() {
         // All, Factionに対応． Alertについてはよくわからない
+        // https://github.com/iitc-project/ingress-intel-total-conversion/blob/7dc38a89e708318eb94c201d9cc6f2b5e158ab36/code/hooks.js
         window.addHook("factionChatDataAvailable", window.plugin.spamBlocker.filter);
         window.addHook("publicChatDataAvailable", window.plugin.spamBlocker.filter);
     };
