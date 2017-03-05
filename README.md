@@ -8,7 +8,7 @@ IITC(:Ingress Intel Total Conversion) Plugins
 
 - [Spam Blocker](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js)
 
-	This plugin blocking RMTers.
+	This plugin is blocking RMTers.
 
 - [Highlight Hub](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/highlightHubPortals.js)
 
