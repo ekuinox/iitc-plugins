@@ -60,8 +60,9 @@ function wrapper(plugin_info) {
 
 
     var setup = function() {
-        // 陣営COMMが更新されるたびに呼び出される
+        // All, Factionに対応． Alertについてはよくわからない
         window.addHook("factionChatDataAvailable", window.plugin.spamBlocker.filter);
+        window.addHook("publicChatDataAvailable", window.plugin.spamBlocker.filter);
     };
 
     // PLUGIN END //////////////////////////////////////////////////////////
