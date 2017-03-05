@@ -6,8 +6,8 @@
 // @version        0.1.1.20170304.225100
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @source         https://github.com/udnp/iitc-plugins
-// @updateURL      
-// @downloadURL    
+// @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js
+// @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js
 // @description    Spam Blocker
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
