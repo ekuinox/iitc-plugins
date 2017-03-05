@@ -1,4 +1,10 @@
 # iitc-plugins
-Ingress Intel Total Conversion Plugins
+
+IITC(:Ingress Intel Total Conversion) Plugins
 
 [iitc-project/ingress-intel-total-conversion/](https://github.com/iitc-project/ingress-intel-total-conversion)
+
+# plugins list
+
+- [Spam Blocker](spamblocker.js)
+	This plugin blocking RMTers.
