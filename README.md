@@ -6,5 +6,5 @@ IITC(:Ingress Intel Total Conversion) Plugins
 
 # plugins list
 
-- [Spam Blocker](spamblocker.js)
+- [Spam Blocker](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js)
 	This plugin blocking RMTers.
