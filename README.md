@@ -25,3 +25,7 @@ IITC(:Ingress Intel Total Conversion) Plugins
 	This plugin highlights portals can supply.
 
 	NOTES* This plugin automatically requests.
+
+- [Service Area Layers](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js)
+
+	au, docomo, softbankのエリアマップを追加するよ．
