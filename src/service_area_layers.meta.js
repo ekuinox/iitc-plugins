@@ -1,6 +1,6 @@
 // ==UserScript==
 // @id             iitc-plugin-service-area-maps
-// @name           IITC plugin: service area maps
+// @name           IITC plugin: Service Area Maps
 // @category       Layer
 // @version        0.0.1.20170706.01000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion

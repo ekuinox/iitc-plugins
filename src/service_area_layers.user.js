@@ -2,7 +2,7 @@
 // @id             iitc-plugin-service-area-maps
 // @name           IITC plugin: service area maps
 // @category       Layer
-// @version        0.0.1.20170706.01000
+// @version        0.0.1.20170706.02000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.meta.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js
@@ -28,7 +28,7 @@ function wrapper(plugin_info)
 	//PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 	//(leaving them in place might break the 'About IITC' page or break update checks)
 	plugin_info.buildName = 'bvq';
-	plugin_info.dateTimeVersion = '20170706.01000';
+	plugin_info.dateTimeVersion = '20170706.02000';
 	plugin_info.pluginId = 'basemap-service-area';
 	//END PLUGIN AUTHORS NOTE
 
