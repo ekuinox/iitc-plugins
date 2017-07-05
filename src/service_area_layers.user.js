@@ -2,11 +2,11 @@
 // @id             iitc-plugin-service-area-maps
 // @name           IITC plugin: Service Area Maps
 // @category       Layer
-// @version        0.0.1.20170706.03000
+// @version        0.0.1.20170706.040000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.meta.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js
-// @description    [bvq-2017-01-08-021732] Add various map layers from service area maps. DoCoMo, au and SoftBank.
+// @description    [bvq-2017-07-06-040000] au, DoCoMo, SoftBankのサービスエリアマップをレイヤへ追加します．
 // @include        https://*.ingress.com/intel*
 // @include        http://*.ingress.com/intel*
 // @match          https://*.ingress.com/intel*
@@ -28,7 +28,7 @@ function wrapper(plugin_info)
 	//PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 	//(leaving them in place might break the 'About IITC' page or break update checks)
 	plugin_info.buildName = 'bvq';
-	plugin_info.dateTimeVersion = '20170706.03000';
+	plugin_info.dateTimeVersion = '20170706.040000';
 	plugin_info.pluginId = 'basemap-service-area';
 	//END PLUGIN AUTHORS NOTE
 
@@ -39,6 +39,7 @@ function wrapper(plugin_info)
 		/*
 		** 日本の大手キャリア三社
 		** もっとスッキリ書きたいけどまあいいや
+		** IITC mobile 対応できていない?
 		*/
 		let maps = {
 			"au": {
