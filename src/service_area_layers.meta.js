@@ -2,7 +2,7 @@
 // @id             iitc-plugin-service-area-maps
 // @name           IITC plugin: Service Area Maps
 // @category       Layer
-// @version        0.0.1.20170706.040000
+// @version        0.0.1.20170706.050000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.meta.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js
