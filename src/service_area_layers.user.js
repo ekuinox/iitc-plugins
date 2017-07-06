@@ -2,7 +2,7 @@
 // @id             iitc-plugin-service-area-maps
 // @name           IITC plugin: Service Area Maps
 // @category       Layer
-// @version        0.0.1.20170706.040000
+// @version        0.0.1.20170706.050000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.meta.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js
@@ -28,7 +28,7 @@ function wrapper(plugin_info)
 	//PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 	//(leaving them in place might break the 'About IITC' page or break update checks)
 	plugin_info.buildName = 'bvq';
-	plugin_info.dateTimeVersion = '20170706.040000';
+	plugin_info.dateTimeVersion = '20170706.050000';
 	plugin_info.pluginId = 'basemap-service-area';
 	//END PLUGIN AUTHORS NOTE
 
@@ -39,9 +39,8 @@ function wrapper(plugin_info)
 		/*
 		** 日本の大手キャリア三社
 		** もっとスッキリ書きたいけどまあいいや
-		** IITC mobile 対応できていない?
 		*/
-		let maps = {
+		var maps = {
 			"au": {
 				styles: [
           {name: "3G", l: "0", t: "B"},
@@ -103,7 +102,7 @@ function wrapper(plugin_info)
        });
 		});
 	};
-	let setup = window.plugin.mapServiceArea.setup;
+	var setup = window.plugin.mapServiceArea.setup;
 
 	// PLUGIN END //////////////////////////////////////////////////////////
 
@@ -114,8 +113,8 @@ function wrapper(plugin_info)
 	if(window.iitcLoaded && typeof setup === 'function') setup();
 } // wrapper end
 // inject code into site context
-let script = document.createElement('script');
-let info = {};
+var script = document.createElement('script');
+var info = {};
 if (typeof GM_info !== 'undefined' && GM_info && GM_info.script) info.script = { version: GM_info.script.version, name: GM_info.script.name, description: GM_info.script.description };
 script.appendChild(document.createTextNode('('+ wrapper +')('+JSON.stringify(info)+');'));
 (document.body || document.head || document.documentElement).appendChild(script);
