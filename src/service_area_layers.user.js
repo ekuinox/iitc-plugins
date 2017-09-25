@@ -2,7 +2,7 @@
 // @id             iitc-plugin-service-area-maps
 // @name           IITC plugin: Service Area Maps
 // @category       Layer
-// @version        0.0.1.20170925.010000
+// @version        0.0.1.20170925.020000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.meta.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js
@@ -28,7 +28,7 @@ function wrapper(plugin_info)
 	//PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 	//(leaving them in place might break the 'About IITC' page or break update checks)
 	plugin_info.buildName = 'bvq';
-	plugin_info.dateTimeVersion = '20170925.010000';
+	plugin_info.dateTimeVersion = '20170925.020000';
 	plugin_info.pluginId = 'basemap-service-area';
 	//END PLUGIN AUTHORS NOTE
 
@@ -91,6 +91,28 @@ function wrapper(plugin_info)
 					window.addLayerGroup(
 						'SoftBank service area map [' + style.name + ']',
             (new L.TileLayer('https://tiles.areamap.mb.softbank.jp/' + style.type + '/' + style.date + '/{z}/{y}/{x}.png', opt)),
+            true
+    			);
+				}
+			},
+			/* オマケのowm */
+			"openweathermap": {
+				styles: [
+					{name : "precipitation", type: "precipitation_new"},
+                    {name : "clouds", type: "clouds_new"},
+                    {name : "pressure", type: "pressure_new"},
+                    {name : "wind", type: "wind_new"},
+                    {name : "temp", type: "temp_new"}
+				],
+				opt: {
+					maxNativeZoom: 13,
+					maxZoom: 21,
+					opacity: 0.9
+				},
+				add: (style, opt) => {
+					window.addLayerGroup(
+						'weather [' + style.name + ']',
+            (new L.TileLayer('http://tile.openweathermap.org/map/' + style.type + '/{z}/{x}/{y}.png?appid=8608ad31bd0454f2f1b586f36c73a4f2', opt)),
             true
     			);
 				}
