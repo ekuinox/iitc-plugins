@@ -2,7 +2,7 @@
 // @id             iitc-plugin-service-area-maps
 // @name           IITC plugin: Service Area Maps
 // @category       Layer
-// @version        0.0.1.20170706.050000
+// @version        0.0.1.20170925.010000
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.meta.js
 // @downloadURL    https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js
@@ -28,7 +28,7 @@ function wrapper(plugin_info)
 	//PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 	//(leaving them in place might break the 'About IITC' page or break update checks)
 	plugin_info.buildName = 'bvq';
-	plugin_info.dateTimeVersion = '20170706.050000';
+	plugin_info.dateTimeVersion = '20170925.010000';
 	plugin_info.pluginId = 'basemap-service-area';
 	//END PLUGIN AUTHORS NOTE
 
@@ -80,7 +80,7 @@ function wrapper(plugin_info)
 			},
 			"SoftBank": {
 				styles: [
-					{name : "hybrid", date: "201706028015", type: "ServiceAreaMap_Hybrid4GLTE_ACT"}
+					{name : "hybrid", date: "201706028020", type: "ServiceAreaMap_Hybrid4GLTE_ACT"}
 				],
 				opt: {
 					maxNativeZoom: 13, // ソフトバンクしょぼい
