@@ -43,9 +43,9 @@ function wrapper(plugin_info)
 		var maps = {
 			"au": {
 				styles: [
-          {name: "3G", l: "0", t: "B"},
-					{name: "4G LTE", l: "1", t: "A"},
-					{name: "WiMAX 2+", l: "2", t: "B"}
+					{ name: "3G", l: "0", t: "B" },
+					{ name: "4G LTE", l: "1", t: "A" },
+					{ name: "WiMAX 2+", l: "2", t: "B" }
 				],
 				opt: {
 					maxNativeZoom: 14, // auの限界は14?
@@ -55,15 +55,15 @@ function wrapper(plugin_info)
 				add: (style, opt) => {
 					window.addLayerGroup(
 						'au service area map [' + style.name + ']',
-            (new L.TileLayer('https://www13.info-mapping.com/au/map/services/tile.asp?l=' + style.l + '&t=' + style.t + '&x={x}&y={y}&z={z}', opt)),
-            true
-    			);
+						(new L.TileLayer('https://www13.info-mapping.com/au/map/services/tile.asp?l=' + style.l + '&t=' + style.t + '&x={x}&y={y}&z={z}', opt)),
+						true
+					);
 				}
 			},
 			"DoCoMo": {
 				styles: [
-					{name : "FOMA, 2017/06/25時点", type: "1011"},
-					{name : "LTE, 2017/06/25時点", type: "1014"}
+					{ name: "FOMA, 2017/06/25時点", type: "1011" },
+					{ name: "LTE, 2017/06/25時点", type: "1014" }
 				],
 				opt: {
 					maxNativeZoom: 14,
@@ -73,14 +73,14 @@ function wrapper(plugin_info)
 				add: (style, opt) => {
 					window.addLayerGroup(
 						'DoCoMo service area map [' + style.name + ']',
-            (new L.TileLayer('https://servicearea.nttdocomo.co.jp/map/' + style.type + '/0000000000000000/{z}/{x}/{z}_{x}_{y}.gif', opt)),
-            true
-    			);
+						(new L.TileLayer('https://servicearea.nttdocomo.co.jp/map/' + style.type + '/0000000000000000/{z}/{x}/{z}_{x}_{y}.gif', opt)),
+						true
+    				);
 				}
 			},
 			"SoftBank": {
 				styles: [
-					{name : "hybrid", date: "201706028020", type: "ServiceAreaMap_Hybrid4GLTE_ACT"}
+					{ name : "hybrid", date: "201706028020", type: "ServiceAreaMap_Hybrid4GLTE_ACT" }
 				],
 				opt: {
 					maxNativeZoom: 13, // ソフトバンクしょぼい
@@ -90,9 +90,9 @@ function wrapper(plugin_info)
 				add: (style, opt) => {
 					window.addLayerGroup(
 						'SoftBank service area map [' + style.name + ']',
-            (new L.TileLayer('https://tiles.areamap.mb.softbank.jp/' + style.type + '/' + style.date + '/{z}/{y}/{x}.png', opt)),
-            true
-    			);
+            			(new L.TileLayer('https://tiles.areamap.mb.softbank.jp/' + style.type + '/' + style.date + '/{z}/{y}/{x}.png', opt)),
+            			true
+    				);
 				}
 			},
 			/* オマケのowm */
@@ -123,7 +123,7 @@ function wrapper(plugin_info)
 		$.each(maps, (key, map) => {
 			$.each(map.styles, (i, style) => {
 				map.add(style, map.opt);
-       });
+			});
 		});
 	};
 	var setup = window.plugin.mapServiceArea.setup;
