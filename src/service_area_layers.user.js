@@ -80,7 +80,7 @@ function wrapper(plugin_info)
 			},
 			"SoftBank": {
 				styles: [
-					{ name : "hybrid", date: "201706028020", type: "ServiceAreaMap_Hybrid4GLTE_ACT" }
+					{ name : "hybrid", date: "20190726000", type: "ServiceAreaMap_Hybrid4GLTE_ACT" }
 				],
 				opt: {
 					maxNativeZoom: 13, // ソフトバンクしょぼい
