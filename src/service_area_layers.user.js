@@ -95,30 +95,6 @@ function wrapper(plugin_info)
     				);
 				}
 			},
-			/* オマケのowm */
-			/*
-			"openweathermap": {
-				styles: [
-					{name : "precipitation", type: "precipitation_new"},
-                    {name : "clouds", type: "clouds_new"},
-                    {name : "pressure", type: "pressure_new"},
-                    {name : "wind", type: "wind_new"},
-                    {name : "temp", type: "temp_new"}
-				],
-				opt: {
-					maxNativeZoom: 13,
-					maxZoom: 21,
-					opacity: 0.9
-				},
-				add: (style, opt) => {
-					window.addLayerGroup(
-						'weather [' + style.name + ']',
-            (new L.TileLayer('http://tile.openweathermap.org/map/' + style.type + '/{z}/{x}/{y}.png?appid=8608ad31bd0454f2f1b586f36c73a4f2', opt)),
-            true
-    			);
-				}
-			}
-			*/
 		};
 		$.each(maps, (key, map) => {
 			$.each(map.styles, (i, style) => {
