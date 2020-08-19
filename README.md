@@ -6,26 +6,17 @@ IITC(:Ingress Intel Total Conversion) Plugins
 
 # plugins list
 
-- [Spam Blocker](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/spamblocker.js)
+- [Spam 
+Blocker](https://raw.githubusercontent.com/ekuinox/iitc-plugins/master/src/spamblocker.js)
 
 	This plugin is blocking RMTers.
 
-- [Highlight Hub](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/highlightHubPortals.js)
+- [Highlight 
+Hub](https://raw.githubusercontent.com/ekuinox/iitc-plugins/master/src/highlightHubPortals.js)
 
 	This plugin highlights portals have many links.
 
-- [Near 8](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/Near8.js)
-
-	This plugin highlights portals close to level 8
-
-	NOTES* This plugin automatically requests.
-
-- [Supply Station](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/supplyStation.js)
-
-	This plugin highlights portals can supply.
-
-	NOTES* This plugin automatically requests.
-
-- [Service Area Layers](https://raw.githubusercontent.com/lm9/iitc-plugins/master/src/service_area_layers.user.js)
+- [Service Area 
+Layers](https://raw.githubusercontent.com/ekuinox/iitc-plugins/master/src/service_area_layers.user.js)
 
 	au, docomo, softbankのエリアマップを追加するよ．
